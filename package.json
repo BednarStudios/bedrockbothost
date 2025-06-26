@@ -7,8 +7,8 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "bedrock-protocol": "^1.21.0",
-    "raknet-native": "^1.0.0"
+    "bedrock-protocol": "3.46.0",
+    "raknet-native": "1.2.3"
   },
   "keywords": ["minecraft", "bedrock", "bot", "raknet"],
   "author": "Seu Nome",
