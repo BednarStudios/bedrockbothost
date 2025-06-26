@@ -1,0 +1,16 @@
+{
+  "name": "bedrock-bot-host",
+  "version": "1.0.0",
+  "description": "Bot ou cliente para Minecraft Bedrock usando bedrock-protocol",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "bedrock-protocol": "^1.21.0",
+    "raknet-native": "^1.0.0"
+  },
+  "keywords": ["minecraft", "bedrock", "bot", "raknet"],
+  "author": "Seu Nome",
+  "license": "MIT"
+}
