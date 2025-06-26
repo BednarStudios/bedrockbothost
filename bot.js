@@ -1,3 +1,4 @@
+require('./server.js');
 const { createClient } = require('bedrock-protocol');
 
 const options = {
