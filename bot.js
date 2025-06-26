@@ -1,4 +1,4 @@
-require('./server.js');
+const http = require('http');
 const { createClient } = require('bedrock-protocol');
 
 const options = {
@@ -11,6 +11,18 @@ const options = {
 
 let client;
 let startTime = Date.now();
+
+http.createServer((req, res) => {
+  if (req.url === '/ping') {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('pong');
+  } else {
+    res.writeHead(404);
+    res.end('not found');
+  }
+}).listen(process.env.PORT || 3000, () => {
+  console.log("Server Running in port", process.env.PORT || 3000)
+});
 
 function getOnlineTime() {
   const ms = Date.now() - startTime;
@@ -98,3 +110,4 @@ function startBot() {
 }
 
 startBot();
+
