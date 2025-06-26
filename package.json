@@ -8,9 +8,15 @@
   },
   "dependencies": {
     "bedrock-protocol": "3.46.0",
+    "npm": "^11.4.2",
     "raknet-native": "1.2.3"
   },
-  "keywords": ["minecraft", "bedrock", "bot", "raknet"],
+  "keywords": [
+    "minecraft",
+    "bedrock",
+    "bot",
+    "raknet"
+  ],
   "author": "Seu Nome",
   "license": "MIT"
 }
